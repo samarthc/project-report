@@ -1,0 +1,133 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+\def\code#1{\texttt{#1}}
+
+\title{
+PClub Project Report
+\\
+Ethical Hacking
+}
+\author{team}
+\date{May 2016}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+
+\maketitle
+
+\newpage 
+
+\tableofcontents
+
+\newpage
+\section*{Member 1: Tanmay Seth}
+
+\newpage
+\section*{Member 2: Samarth Chawla}
+\subsection*{Summary of challenges completed}
+\paragraph{}
+\subparagraph{\href{http://overthewire.org/wargames/bandit/}{Bandit}}
+The bandit wargame only focuses on \textbf{teaching} command line utilities that might be useful in exploits, not actual exploits
+\begin{itemize}
+    
+    \item \textbf{Levels 0 - 6: } ssh and basics of command line; \code{ls, cat, file, find} \footnote{Reading up on \code{find} was useful for me, as initially I was using \code{ls} to \code{grep} for non-executables, then stripping out filenames and piping to \code{du} and \code{file}}
+    
+    \item \textbf{Levels 7 - 12: } matching text with \code{grep}, finding a uniquely string with \code{sort} and \code{uniq}, decoding base64 data with \code{base64}, deciphering a ROT13 cipher with \code{tr}, uncompressing a hexdump with \code{xxd} and \code{tar}
+    
+    \item \textbf{Levels 13 - 16: } working with network protocols; ssh using a private key, using \code{telnet} and \code{openssl} to exhange data, using \code{nmap} to scan for open ports
+    
+    \item \textbf{Level 17: } used \code{diff} to compare two files and extract the password
+    
+    \item \textbf{Level 18: } used \code{scp} to transfer files from an ssh server that logs you out immediately on logging in due to a modified .bashrc, thus bypassing the shell on the remote PC
+
+\newpage
+\section*{Member 3: Prannay Khosla}
+
+\newpage
+\section*{Member 4: Jaismin Kaur}
+
+\newpage
+\section*{Member 5: Bhuvi Gupta}
+\subsection*{Work done till now}
+\paragraph{}
+As a part of the ethical hacking project, I have completed the following:
+\begin{itemize}
+    \item Basics of HTML, CSS(Moderate), JS, SQL, PHP(beginner)
+    \item Completed Week 2 of the coursera course on Software Security, Project 1 is still pending
+    \item Level 18 of bandits, level 10 of natas, basic challeges in HTS level 10
+\end{itemize}
+
+\paragraph{Time line of work done}
+\subparagraph{\textit{Till 20th May}}
+    \begin{itemize}
+    \item Basics of HTMl, CSS, JS, SQL 
+    \item Udacity's course on git and git hub 
+    \item Basics of vim 
+    \item Week 1 of Software Security(Coursera), excluding project 
+    \item Creation of home page directory
+    \end{itemize}
+\subparagraph{\textit{TILL 25TH MAY}}
+\subparagraph{Bandits level 15}
+    \textit{First Five Levels}
+    \begin{itemize}
+    \item Basic terminal commands such as:ls, la, escaping special characters, du, file, cat, find
+    \item Connect to a server using ssh
+    \end{itemize}
+    \textit{Next Five Levels (6-10)}
+    \begin{itemize}
+    \item Terminal commands like grep, tar, bzip2, gzip, xxd, base64, diff, sort, uniq, tr
+    \end{itemize}
+    \textit{Next Five Levels(10-15)}
+    \begin{itemize}
+    \item Terminal commands such as:tr, telnet, nmap, openssl
+    \item Connect to a server using ssh key
+    \end{itemize}
+\subparagraph{Natas level 5}
+    \begin{itemize}
+    \item Basic intro to using the developer panel
+    \item robots.txt
+    \item Exploiting vulnerabilities in functions which mail the flag on a specified mail id
+    \end{itemize}    
+\subparagraph{Hack this Site Java script challenges}
+    \begin{itemize}
+    \item Completed all levels except for last
+    \end{itemize}    
+    
+\subparagraph{\textit{Till 28th May}}
+\subparagraph{Bandits level 19}
+    \textit{Level 16-19}
+    \begin{itemize}
+    \item Terminal commands such as:nmap, diff
+    \end{itemize}
+    
+\subparagraph{Natas level 6-10}
+    \begin{itemize}
+    \item Accessing password by exploiting general terminal commands such as grep and cat.
+    \item Using tamper to change referer 
+    \item Basic intro to cookies
+    \item Basic intro to php
+    \end{itemize}    
+\subparagraph{Hack this Site Basic Challenges}
+    \begin{itemize}
+    \item Increased familiarity with web hacking
+    \end{itemize} 
+\subparagraph{Week 2 of coursera course}
+    Basic knowledge about the following:
+    \begin{itemize}
+    \item Stack canaries
+    \item ROP
+    \item Return to libC
+    \end{itemize} 
+    
+\subsection*{Future Tasks:Upcoming week}
+\begin{itemize}
+    \item Move ahead with the coursera course
+    \item Read more about assembly language
+    \item install ida/hopper
+    \item Attempt Narnia challenges
+\end{itemize}
+\end{document}
