@@ -1,0 +1,21 @@
+\contentsline {paragraph}{\href {http://overthewire.org/wargames/bandit/}{Bandit}}{4}{section*.13}
+\contentsline {paragraph}{\href {http://overthewire.org/wargames/bandit}{Natas}}{4}{section*.14}
+\contentsline {paragraph}{\href {http://hackthissite.org/missions/basic}{Hackthissite basic missions}}{5}{section*.15}
+\contentsline {paragraph}{\href {http://hackthissite.org/missions/javascript}{Hackthissite javascript missions}}{5}{section*.16}
+\contentsline {paragraph}{Work was done in a discontinous manner without a proper timeline, since more time was spent on learning and developing rather than actual hacking.}{6}{section*.20}
+\contentsline {paragraph}{Future work:}{6}{section*.21}
+\contentsline {paragraph}{}{7}{section*.24}
+\contentsline {paragraph}{summary of challanges}{7}{section*.25}
+\contentsline {paragraph}{future tasks}{7}{section*.26}
+\contentsline {paragraph}{}{8}{section*.29}
+\contentsline {paragraph}{Time line of work done}{8}{section*.30}
+\contentsline {subparagraph}{\textit {Till 20th May}}{8}{section*.31}
+\contentsline {subparagraph}{\textit {TILL 25TH MAY}}{8}{section*.32}
+\contentsline {subparagraph}{Bandits level 15}{8}{section*.33}
+\contentsline {subparagraph}{Natas level 5}{8}{section*.34}
+\contentsline {subparagraph}{Hack this Site Java script challenges}{9}{section*.35}
+\contentsline {subparagraph}{\textit {Till 28th May}}{9}{section*.36}
+\contentsline {subparagraph}{Bandits level 19}{9}{section*.37}
+\contentsline {subparagraph}{Natas level 6-10}{9}{section*.38}
+\contentsline {subparagraph}{Hack this Site Basic Challenges}{9}{section*.39}
+\contentsline {subparagraph}{Week 2 of coursera course}{9}{section*.40}
