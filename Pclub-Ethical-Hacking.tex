@@ -29,9 +29,9 @@ Ethical Hacking
 \newpage
 \section*{Member 2: Samarth Chawla}
 \subsection*{Summary of challenges completed}
-\paragraph{}
-\subparagraph{\href{http://overthewire.org/wargames/bandit/}{Bandit}}
-The bandit wargame only focuses on \textbf{teaching} command line utilities that might be useful in exploits, not actual exploits
+
+\paragraph{\href{http://overthewire.org/wargames/bandit/}{Bandit}}
+The bandit wargame only focuses on \textit{teaching} command line utilities that might be useful in exploits, not actual exploits
 \begin{itemize}
     
     \item \textbf{Levels 0 - 6: } ssh and basics of command line; \code{ls, cat, file, find} \footnote{Reading up on \code{find} was useful for me, as initially I was using \code{ls} to \code{grep} for non-executables, then stripping out filenames and piping to \code{du} and \code{file}}
@@ -43,6 +43,47 @@ The bandit wargame only focuses on \textbf{teaching} command line utilities that
     \item \textbf{Level 17: } used \code{diff} to compare two files and extract the password
     
     \item \textbf{Level 18: } used \code{scp} to transfer files from an ssh server that logs you out immediately on logging in due to a modified .bashrc, thus bypassing the shell on the remote PC
+    
+    \item \textbf{Levels 19 - 20: } learned about setuid, learned to start network daemons from the command line using \code{nc}
+    
+    \item \textbf{Levels 21-23: } learned about \code{cron}; in level 23, abused a cronjob running all scripts from a particular directory to copy the password to a particular directory
+
+\end{itemize}
+
+\paragraph{\href{http://overthewire.org/wargames/bandit}{Natas}}
+
+\begin{itemize}
+    
+    \item \textbf{Levels 0 - 2: } Password commented in source code of levels 0 and 1, simply opened the developer panel to access the password; level 2 had an image from subdirectory \code{/files}, and the index of \code{files} contained an unprotected file with the password
+    
+    \item \textbf{Level 3: } Comment in source code hinting at Google not being able to find the password. Had to look up the solution after a lot of trying, a directory listed in the site's \code{robots.txt} had the password
+    
+    \item \textbf{Level 4: } Had to again seek help (from Prannay this time) as I could not figure out what to do after a lot of trying. Tried \code{window.history.pushState("http://natas5.natas.labs.overthewire.org")} first, but found I had to edit the HTTP request header before it got sent, and did so using the Tamper extension on Chromium.
+    
+    \item \textbf{Level 5: } Edited the loggedin cookie using \code{document.cookie="loggedin=1"}
+    
+    \item \textbf{Level 6: } Found the secret from \code{/includes/secret.inc}
+    
+    \item \textbf{Level 7: } Modified \code{href} of link to \code{/etc/natas_webpass/natas8}
+    
+    \item \textbf{Level 8: } The secret is now encoded into base64, then reversed and converted to hex. Ideally, I would have written either a PHP script or something like a bash or python script, but since I wasn't familiar enough with either, I wrote a c program to convert the hex into ASCII, then ran the output through the unix programs \code{rev} and \code{base64_decode}.
+    
+    \item \textbf{Level 9: } Injected \code{; cat /etc/natas_webpass/natas10} into the PHP script to access the password.
+    
+    \item \textbf{Level 10: } Since ";|&" are now filtered, (after floundering about for a long while) I input \code{-e '.' /etc/natas_webpass/natas11 #} to output every line from \code{/etc/natas_webpass/natas11}
+    
+\end{itemize}
+
+\paragraph{\href{http://hackthissite.org/missions/basic}{Hackthissite basic missions}}, except the last basic mission
+
+\paragraph{\href{http://hackthissite.org/missions/javascript}{Hackthissite javascript missions}}
+
+\subsection*{Future Tasks: Upcoming week}
+\begin{itemize}
+    \item Begin with Week 1 of the Coursera course on Software Security
+    \item Move ahead with Natas
+    \item Learn PHP
+\end{itemize}
 
 \newpage
 \section*{Member 3: Prannay Khosla}
