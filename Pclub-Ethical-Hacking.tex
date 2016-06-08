@@ -295,11 +295,28 @@ As a part of the ethical hacking project, I have completed the following:
         \item Return to libC
     \end{itemize} 
 
-\subsection*{Future Tasks:Upcoming week}
+\newpage
+\section*{As of 8th June 2016}
+\subsection*{The following occur in no particular order of completion}
 \begin{itemize}
-    \item Move ahead with the coursera course
-    \item Read more about assembly language
-    \item install ida/hopper
-    \item Attempt Narnia challenges
+    \item Completed Project 1 of the coursera course
+        \paragraph{}
+        The project was about exploiting buffer overflow vulnerabilities. A c code needed to be examined and a stack smashing attack needed to be carried out. Project involved the use of gdb primarily(and virtual box too). Learnt the basic usage of gdb like setting break points, printing address of variables/registers.
+    \item Two levels of microcorruption.com
+        \paragraph{Level 1}
+        I spent a considerable duration of time on this, given my unfamiliarity with assembly. Although in the end, I realized this level was a cake-walk. Learnt basic assembly instructions like push, move, move.b, cmp, jz, je etc. The password of this level was stored in a register upon calling the getpassword() function. One could easily track the register and get the password.
+        \paragraph{Level 2}
+        I was stuck on this level for a long time too. I was not taking into account 'little endianness'. Once I learnt about that, it was easy peasy.
+    \item Backdoor CTF, SDSLabs
+        \paragraph{}
+        I succesfully completed two levels.
+        \\
+        One of these required the use of hashing. Learnt about md5 and sha-256 hashing
+        The other only required to tamper with the cookie, i order to be able to view the page as 'admin'.
+    \item Micellaneous
+        \paragraph{}
+        Read a bit and tried to implement some basic stuff in jekyll, in order to be able to maintain a blog in future. Hope to upload it soon on gh-pages.
 \end{itemize}
+
+
 \end{document}
