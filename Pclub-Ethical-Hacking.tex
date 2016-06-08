@@ -5,7 +5,7 @@
 \def\code#1{\texttt{#1}}
 
 \title{
-PClub Project Report
+    PClub Project Report
 \\
 Ethical Hacking
 }
@@ -46,102 +46,150 @@ Ethical Hacking
 \begin{itemize}
     \item \textbf{challenges of hack this site till basics level 10}
     \item 
-\textbf{started creation of my homepage}
+        \textbf{started creation of my homepage}
     \item \textbf{basics of vim editor}
 \end{itemize}
 \subsection*{till 29th May}
 \begin{itemize}
     \item \textbf{created my homepage}
     \item \textbf{first week of cyber security course on coursera}
-\subsection*{in future}
-\begin{itemize}
-    \item \textbf{attempt more challenges and levels.}
-\end{itemize}
+        \subsection*{in future}
+        \begin{itemize}
+            \item \textbf{attempt more challenges and levels.}
+        \end{itemize}
 
-\newpage
-\section*{Member 2: Samarth Chawla}
-\subsection*{Summary of challenges completed}
+        \newpage
+        \section*{Member 2: Samarth Chawla}
+        \subsection*{Summary of challenges completed until May 29}
 
-\paragraph{\href{http://overthewire.org/wargames/bandit/}{Bandit}}
-The bandit wargame only focuses on \textit{teaching} command line utilities that might be useful in exploits, not actual exploits
-\begin{itemize}
-    
-    \item \textbf{Levels 0 - 6: } ssh and basics of command line; \code{ls, cat, file, find} \footnote{Reading up on \code{find} was useful for me, as initially I was using \code{ls} to \code{grep} for non-executables, then stripping out filenames and piping to \code{du} and \code{file}}
-    
-    \item \textbf{Levels 7 - 12: } matching text with \code{grep}, finding a uniquely string with \code{sort} and \code{uniq}, decoding base64 data with \code{base64}, deciphering a ROT13 cipher with \code{tr}, uncompressing a hexdump with \code{xxd} and \code{tar}
-    
-    \item \textbf{Levels 13 - 16: } working with network protocols; ssh using a private key, using \code{telnet} and \code{openssl} to exhange data, using \code{nmap} to scan for open ports
-    
-    \item \textbf{Level 17: } used \code{diff} to compare two files and extract the password
-    
-    \item \textbf{Level 18: } used \code{scp} to transfer files from an ssh server that logs you out immediately on logging in due to a modified .bashrc, thus bypassing the shell on the remote PC
-    
-    \item \textbf{Levels 19 - 20: } learned about setuid, learned to start network daemons from the command line using \code{nc}
-    
-    \item \textbf{Levels 21-23: } learned about \code{cron}; in level 23, abused a cronjob running all scripts from a particular directory to copy the password to a particular directory
+        \paragraph{\href{http://overthewire.org/wargames/bandit/}{Bandit}}
+        The bandit wargame only focuses on \textit{teaching} command line utilities that might be useful in exploits, not actual exploits
+        \begin{itemize}
 
-\end{itemize}
+            \item \textbf{Levels 0 - 6: } ssh and basics of command line; \code{ls, cat, file, find} \footnote{Reading up on \code{find} was useful for me, as initially I was using \code{ls} to \code{grep} for non-executables, then stripping out filenames and piping to \code{du} and \code{file}}
 
-\paragraph{\href{http://overthewire.org/wargames/bandit}{Natas}}
+            \item \textbf{Levels 7 - 12: } matching text with \code{grep}, finding a uniquely string with \code{sort} and \code{uniq}, decoding base64 data with \code{base64}, deciphering a ROT13 cipher with \code{tr}, uncompressing a hexdump with \code{xxd} and \code{tar}
 
-\begin{itemize}
-    
-    \item \textbf{Levels 0 - 2: } Password commented in source code of levels 0 and 1, simply opened the developer panel to access the password; level 2 had an image from subdirectory \code{/files}, and the index of \code{files} contained an unprotected file with the password
-    
-    \item \textbf{Level 3: } Comment in source code hinting at Google not being able to find the password. Had to look up the solution after a lot of trying, a directory listed in the site's \code{robots.txt} had the password
-    
-    \item \textbf{Level 4: } Had to again seek help (from Prannay this time) as I could not figure out what to do after a lot of trying. Tried \code{window.history.pushState("http://natas5.natas.labs.overthewire.org")} first, but found I had to edit the HTTP request header before it got sent, and did so using the Tamper extension on Chromium.
-    
-    \item \textbf{Level 5: } Edited the loggedin cookie using \code{document.cookie="loggedin=1"}
-    
-    \item \textbf{Level 6: } Found the secret from \code{/includes/secret.inc}
-    
-    \item \textbf{Level 7: } Modified \code{href} of link to \code{/etc/natas\_webpass/natas8}
-    
-    \item \textbf{Level 8: } The secret is now encoded into base64, then reversed and converted to hex. Ideally, I would have written either a PHP script or something like a bash or python script, but since I wasn't familiar enough with either, I wrote a c program to convert the hex into ASCII, then ran the output through the unix programs \code{rev} and \code{base64\_decode}.
-    
-    \item \textbf{Level 9: } Injected \code{; cat /etc/natas\_webpass/natas10} into the PHP script to access the password.
-    
-    \item \textbf{Level 10: } Since ";|\&" are now filtered, (after floundering about for a long while) I input \code{-e '.' /etc/natas\_webpass/natas11 \#} to output every line from \code{/etc/natas\_webpass/natas11}
-    
-\end{itemize}
+            \item \textbf{Levels 13 - 16: } working with network protocols; ssh using a private key, using \code{telnet} and \code{openssl} to exhange data, using \code{nmap} to scan for open ports
 
-\paragraph{\href{http://hackthissite.org/missions/basic}{Hackthissite basic missions}}, except the last basic mission
+            \item \textbf{Level 17: } used \code{diff} to compare two files and extract the password
 
-\paragraph{\href{http://hackthissite.org/missions/javascript}{Hackthissite javascript missions}}
+            \item \textbf{Level 18: } used \code{scp} to transfer files from an ssh server that logs you out immediately on logging in due to a modified .bashrc, thus bypassing the shell on the remote PC
 
-\subsection*{Future Tasks: Upcoming week}
-\begin{itemize}
-    \item Begin with Week 1 of the Coursera course on Software Security
-    \item Move ahead with Natas
-    \item Learn PHP
-\end{itemize}
+            \item \textbf{Levels 19 - 20: } learned about setuid, learned to start network daemons from the command line using \code{nc}
+
+            \item \textbf{Levels 21-23: } learned about \code{cron}; in level 23, abused a cronjob running all scripts from a particular directory to copy the password to a particular directory
+
+        \end{itemize}
+
+        \paragraph{\href{http://overthewire.org/wargames/bandit}{Natas}}
+
+        \begin{itemize}
+
+            \item \textbf{Levels 0 - 2: } Password commented in source code of levels 0 and 1, simply opened the developer panel to access the password; level 2 had an image from subdirectory \code{/files}, and the index of \code{files} contained an unprotected file with the password
+
+            \item \textbf{Level 3: } Comment in source code hinting at Google not being able to find the password. Had to look up the solution after a lot of trying, a directory listed in the site's \code{robots.txt} had the password
+
+            \item \textbf{Level 4: } Had to again seek help (from Prannay this time) as I could not figure out what to do after a lot of trying. Tried \code{window.history.pushState("http://natas5.natas.labs.overthewire.org")} first, but found I had to edit the HTTP request header before it got sent, and did so using the Tamper extension on Chromium.
+
+            \item \textbf{Level 5: } Edited the loggedin cookie using \code{document.cookie="loggedin=1"}
+
+            \item \textbf{Level 6: } Found the secret from \code{/includes/secret.inc}
+
+            \item \textbf{Level 7: } Modified \code{href} of link to \code{/etc/natas\_webpass/natas8}
+
+            \item \textbf{Level 8: } The secret is now encoded into base64, then reversed and converted to hex. Ideally, I would have written either a PHP script or something like a bash or python script, but since I wasn't familiar enough with either, I wrote a c program to convert the hex into ASCII, then ran the output through the unix programs \code{rev} and \code{base64\_decode}.
+
+            \item \textbf{Level 9: } Injected \code{; cat /etc/natas\_webpass/natas10} into the PHP script to access the password.
+
+            \item \textbf{Level 10: } Since ";|\&" are now filtered, (after floundering about for a long while) I input \code{-e '.' /etc/natas\_webpass/natas11 \#} to output every line from \code{/etc/natas\_webpass/natas11}
+
+        \end{itemize}
+
+        \paragraph{\href{http://hackthissite.org/missions/basic}{Hackthissite basic missions}}, except the last basic mission
+
+        \paragraph{\href{http://hackthissite.org/missions/javascript}{Hackthissite javascript missions}}
+
+        \subsection*{Summary of tasks completed until June 7}
+
+        \paragraph{\href{http://overthewire.org/wargames/natas}{Natas}}
+        \begin{itemize}
+            \item \textbf{Level 11: }First base64 decoded the cookie, which gave
+                me xor encrypted json data, and json encoded the expected data.
+                xor encrypting one with the other as the key gave me the key
+                which was used. Used that key to encrypt the json encoding of
+                data with "showpassword" set to "yes" and base64 encoded it back
+                into the cookie.
+            \item \textbf{Level 12: }This took me a while, and I had to give up
+                and look up the solution. I was thinking about something along
+                the lines of running a bash script, but the fact that this is a
+                server and would happily run any php script I gave it did not
+                occur to me.
+            \item \textbf{Level 13: }I looked up how the \code{exif\_imagetype}
+                function works, and a bit of searching led me to magic numbers
+                and file signatures. I simply prepended the file signature for
+                png before a php script and uploaded that.
+            \item \textbf{Level 14: }Reeked of SQL injection. I looked up a
+                common tactic for overriding the \code{where} clause (1=1) and injected
+                that.
+        \end{itemize}
+        \paragraph{\href{http://overthewire.org/wargames/narnia}{Narnia}}
+        \begin{itemize}
+            \item \textbf{Level 0: }Simple buffer overflow to set the val as
+                \code{0xdeadbeef}. Ran into a spot of trouble as ASCII only goes up to
+                \code{0x7f}, but found that \code{echo -e '\textbackslash xef\textbackslash xbe\textbackslash xad\textbackslash xde'} works for
+                inserting arbitrary hex values.
+        \end{itemize}
+        \paragraph{\href{http://microcorruption.com}{Microcorruption}}
+        \begin{itemize}
+            \item \textbf{New Orleans: }Looking at the disassembled code and
+                stepping through an execution of \code{check\_password}, I found out
+                that my input is being compared against something stored at the
+                location in \code{r13}. From the memory dump, I found the password stored at location in
+                \code{r13}.
+            \item \textbf{Sydney: }This time, my input is not compared against
+                something in memory, but the password is hard-coded in the
+                program, viewable in disassembly as hex values.
+        \end{itemize}
+        \paragraph{\href{http://backdoor.sdslabs.co}{Backdoor}}
+        \begin{itemize}
+            \item \textbf{2013-bin-50: }Running \code{strings} on the binary throws
+                up lines of the form "The password is something". The password
+                is indeed one of those.
+            \item \textbf{2013-web-50: }Used JavaScript injection to change
+                cookie username to admin
+            \item \textbf{file reader: }Simply typed ".../flag.php"
+            \item \textbf{authorized persons only: }Another cookie change
+        \end{itemize}
+
+        \paragraph{} \textbf{Completed Week 2 of Software Security course on
+        Coursera}
 
 \newpage
 \section*{Member 3: Prannay Khosla}
 \subsection*{Work done till now}
 \begin{itemize}
-	\item Completed till Level 17 NATAS, Level 10 of HTS Basics and all Javsascript challenges on HTS.
-	\item Completed till week 2 of the coursera course of Software Security by the  University of Maryland. 
-	\item Studied basic of Architecture and 3 address code and a little bit about processors.
+    \item Completed till Level 17 NATAS, Level 10 of HTS Basics and all Javsascript challenges on HTS.
+    \item Completed till week 2 of the coursera course of Software Security by the  University of Maryland. 
+    \item Studied basic of Architecture and 3 address code and a little bit about processors.
 \end{itemize}
 \paragraph{Work was done in a discontinous manner without a proper timeline, since more time was spent on learning and developing rather than actual hacking.}
 \begin{itemize}
-	\item \textit{NATAS Level 0 to Level 2} : Basic HTML source code checking, browser tools etc
-	\item \textit{NATAS Level 3 to Level 5} : Basic scripting and request tampering
-	\item \textit{NATAS Level 6 to Level 8} : Basic PHP injection and reverse engineering from source code. 
-	\item \textit{NATAS Level 9 to 11} : Injecting bash commands from PHP and reverse engineering from known encryptions.
-	\item \textit{NATAS Level 12 to 13} :  Injecting files that run system commands into the website to hack data. 
-	\item \textit{NATAS Level 14 to 17} : SQL injection using arguments, sometimes requiring python based brute forcing. 
-	\item \textit{HTS Basic Level 1 to 10} : Basic PHP, SQL injection and command line injection
-	\item \textit{HTS Javascript Level 1 to 7} : All challenges were trivial except the last which required brute forcing from the console. 
+    \item \textit{NATAS Level 0 to Level 2} : Basic HTML source code checking, browser tools etc
+    \item \textit{NATAS Level 3 to Level 5} : Basic scripting and request tampering
+    \item \textit{NATAS Level 6 to Level 8} : Basic PHP injection and reverse engineering from source code. 
+    \item \textit{NATAS Level 9 to 11} : Injecting bash commands from PHP and reverse engineering from known encryptions.
+    \item \textit{NATAS Level 12 to 13} :  Injecting files that run system commands into the website to hack data. 
+    \item \textit{NATAS Level 14 to 17} : SQL injection using arguments, sometimes requiring python based brute forcing. 
+    \item \textit{HTS Basic Level 1 to 10} : Basic PHP, SQL injection and command line injection
+    \item \textit{HTS Javascript Level 1 to 7} : All challenges were trivial except the last which required brute forcing from the console. 
 \end{itemize}
 
 \paragraph{Future work:}
 \begin{itemize}
-	\item Work forward with system architecture and reverse engineering binaries.
-	\item Move on to Narnia wargames for hacking
-	\item Start blogging about good challenges.
+    \item Work forward with system architecture and reverse engineering binaries.
+    \item Move on to Narnia wargames for hacking
+    \item Start blogging about good challenges.
 \end{itemize}
 
 
@@ -154,24 +202,24 @@ The bandit wargame only focuses on \textit{teaching} command line utilities that
     \item written the code for the homepage, request is yet to be approved.
     \item on week two of software security course on coursera, project one is yet to be done.
     \item on level 15 of bandit, basci level 8 on HTS, level 4 natas
-\paragraph{summary of challanges} 
-\begin{itemize}
-    \item bandit level 0-6 : basic commands like ls, cd, cat, du, to look for the password
-    \item bandit level 6-10 : working on commands like grep, strings, tar, etcetra
-    \item bandit level 10-15 : working with private ssh keys, decoding data with base64, working with network protocols
-    \item basic HTS : working with source codes, editing source code to send password to desired email,working with UNIX command line
-\paragraph{future tasks}
-\begin{itemize}
-    \item going with software security course on coursera
-    \item do basics of PHP
-    \item learn assembly language
-    \item progress with challenges
-\end{itemize}
-\end{itemize}
-\begin{itemize}
-    \item learnt commands like ls, cd, cat, file, du, grep, sort ,tr, base64, strings, uniq, ssh, etcetra
-\end{itemize}
-    
+        \paragraph{summary of challanges} 
+        \begin{itemize}
+            \item bandit level 0-6 : basic commands like ls, cd, cat, du, to look for the password
+            \item bandit level 6-10 : working on commands like grep, strings, tar, etcetra
+            \item bandit level 10-15 : working with private ssh keys, decoding data with base64, working with network protocols
+            \item basic HTS : working with source codes, editing source code to send password to desired email,working with UNIX command line
+                \paragraph{future tasks}
+                \begin{itemize}
+                    \item going with software security course on coursera
+                    \item do basics of PHP
+                    \item learn assembly language
+                    \item progress with challenges
+                \end{itemize}
+        \end{itemize}
+        \begin{itemize}
+            \item learnt commands like ls, cd, cat, file, du, grep, sort ,tr, base64, strings, uniq, ssh, etcetra
+        \end{itemize}
+
 \end{itemize}
 \end{itemize}
 \newpage
@@ -188,65 +236,65 @@ As a part of the ethical hacking project, I have completed the following:
 \paragraph{Time line of work done}
 \subparagraph{\textit{Till 20th May}}
     \begin{itemize}
-    \item Basics of HTMl, CSS, JS, SQL 
-    \item Udacity's course on git and git hub 
-    \item Basics of vim 
-    \item Week 1 of Software Security(Coursera), excluding project 
-    \item Creation of home page directory
+        \item Basics of HTMl, CSS, JS, SQL 
+        \item Udacity's course on git and git hub 
+        \item Basics of vim 
+        \item Week 1 of Software Security(Coursera), excluding project 
+        \item Creation of home page directory
     \end{itemize}
 \subparagraph{\textit{TILL 25TH MAY}}
 \subparagraph{Bandits level 15}
     \textit{First Five Levels}
     \begin{itemize}
-    \item Basic terminal commands such as:ls, la, escaping special characters, du, file, cat, find
-    \item Connect to a server using ssh
+        \item Basic terminal commands such as:ls, la, escaping special characters, du, file, cat, find
+        \item Connect to a server using ssh
     \end{itemize}
     \textit{Next Five Levels (6-10)}
     \begin{itemize}
-    \item Terminal commands like grep, tar, bzip2, gzip, xxd, base64, diff, sort, uniq, tr
+        \item Terminal commands like grep, tar, bzip2, gzip, xxd, base64, diff, sort, uniq, tr
     \end{itemize}
     \textit{Next Five Levels(10-15)}
     \begin{itemize}
-    \item Terminal commands such as:tr, telnet, nmap, openssl
-    \item Connect to a server using ssh key
+        \item Terminal commands such as:tr, telnet, nmap, openssl
+        \item Connect to a server using ssh key
     \end{itemize}
 \subparagraph{Natas level 5}
     \begin{itemize}
-    \item Basic intro to using the developer panel
-    \item robots.txt
-    \item Exploiting vulnerabilities in functions which mail the flag on a specified mail id
+        \item Basic intro to using the developer panel
+        \item robots.txt
+        \item Exploiting vulnerabilities in functions which mail the flag on a specified mail id
     \end{itemize}    
 \subparagraph{Hack this Site Java script challenges}
     \begin{itemize}
-    \item Completed all levels except for last
+        \item Completed all levels except for last
     \end{itemize}    
-    
+
 \subparagraph{\textit{Till 28th May}}
 \subparagraph{Bandits level 19}
     \textit{Level 16-19}
     \begin{itemize}
-    \item Terminal commands such as:nmap, diff
+        \item Terminal commands such as:nmap, diff
     \end{itemize}
-    
+
 \subparagraph{Natas level 6-10}
     \begin{itemize}
-    \item Accessing password by exploiting general terminal commands such as grep and cat.
-    \item Using tamper to change referer 
-    \item Basic intro to cookies
-    \item Basic intro to php
+        \item Accessing password by exploiting general terminal commands such as grep and cat.
+        \item Using tamper to change referer 
+        \item Basic intro to cookies
+        \item Basic intro to php
     \end{itemize}    
 \subparagraph{Hack this Site Basic Challenges}
     \begin{itemize}
-    \item Increased familiarity with web hacking
+        \item Increased familiarity with web hacking
     \end{itemize} 
 \subparagraph{Week 2 of coursera course}
     Basic knowledge about the following:
     \begin{itemize}
-    \item Stack canaries
-    \item ROP
-    \item Return to libC
+        \item Stack canaries
+        \item ROP
+        \item Return to libC
     \end{itemize} 
-    
+
 \subsection*{Future Tasks:Upcoming week}
 \begin{itemize}
     \item Move ahead with the coursera course
