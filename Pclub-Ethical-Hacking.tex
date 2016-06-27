@@ -1,3 +1,4 @@
+
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}
@@ -199,21 +200,31 @@ Ethical Hacking
 \paragraph{}
 \begin{itemize}
     \item Basics of HTML, CSS JavaScript, SQL, and begun PHP.
-    \item written the code for the homepage, request is yet to be approved.
-    \item on week two of software security course on coursera, project one is yet to be done.
-    \item on level 15 of bandit, basci level 8 on HTS, level 4 natas
+    \item written the code for the homepage, request is approved, uploading the page is left.
+    \item learning github. 
+    \item on week two of software security course on coursera, project one is going on.
+    \item on level 15 of bandit, basci level 8 on HTS, level 8 natas, new orleans microcorruption, 
+    \item understanding assembly language, memory layout, basics of buffer overflow attack. 
         \paragraph{summary of challanges} 
         \begin{itemize}
             \item bandit level 0-6 : basic commands like ls, cd, cat, du, to look for the password
             \item bandit level 6-10 : working on commands like grep, strings, tar, etcetra
             \item bandit level 10-15 : working with private ssh keys, decoding data with base64, working with network protocols
             \item basic HTS : working with source codes, editing source code to send password to desired email,working with UNIX command line
+            \item natas level 0,1 : get password from source code
+            \item natas level 2,3 : password is stored in a directory, use robots.txt
+            \item natas level 4 : interesting one. change the referer field in headers
+            \item natas level 5 : a start on cookies. a cookie that was earlier 0 was changed to 1 and access was granted.
+            \item natas level 6,7 : looking in the file in the source code gives the password. 
+            \item new orleans microcorruption : understanding memory layout and assembly code. using assembly commands like posh move etc. 
                 \paragraph{future tasks}
                 \begin{itemize}
                     \item going with software security course on coursera
                     \item do basics of PHP
                     \item learn assembly language
-                    \item progress with challenges
+                    \item progress with challenges, and microcorruption. 
+                    \item start blogging about stuff learnt.
+                    \item start backdoor challanges
                 \end{itemize}
         \end{itemize}
         \begin{itemize}
@@ -294,7 +305,6 @@ As a part of the ethical hacking project, I have completed the following:
         \item ROP
         \item Return to libC
     \end{itemize} 
-
 \newpage
 \section*{As of 8th June 2016}
 \subsection*{The following occur in no particular order of completion}
@@ -318,5 +328,27 @@ As a part of the ethical hacking project, I have completed the following:
         Read a bit and tried to implement some basic stuff in jekyll, in order to be able to maintain a blog in future. Hope to upload it soon on gh-pages.
 \end{itemize}
 
+\newpage
+\section*{As of 27th June 2016}
+\subsection*{The following occur in no particular order of completion}
+\begin{itemize}
+    \item Microcorruption level Hanoi
+        \paragraph{}
+        This level required us to do a buffer overflow. The password was not being compared to any predefined password, but only a single memory address was being checked. This address could be overwritten to the desired value by overflowing the buffer. Still stuck on Reykjavik.
+    \item Challenges in Backdoor CTF
+        \paragraph{}
+        Did 4-5 challenges. One of which was particularly interesting. It had an audio file which needed to be reversed and slowed down in order to be able to obtain the password.
+    \item \textbf{Final Project}
+        \paragraph{}
+        We decided to merge the topics shell code injection and MITM attack in our project. We went through the Aleph-One article on smashing the stack for fun and profit, the ssl-strip tool. We succeeded in using shell code injection to spawn a shell and bind it to a specific port on localhost. 
+        \\
+        However, we had problems implementing the server. So, we shifted to accessing the server through ssh and scrapped the MITM. We created a binary with a vulnrable buffer. Work still in progress.
+    \item Micellaneous
+        \paragraph{}
+        githuub.io website up and running but no content. Hope to Start uploading soon
+\end{itemize}
+
 
 \end{document}
+
+    
